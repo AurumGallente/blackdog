@@ -1,0 +1,13 @@
+{
+"method": "dolphin.registerNewMember",
+"data":
+    {
+        "0": "user2",
+        "1": "ivan",
+        "2": "petrovskyi",
+        "3": "12345678",
+        "4": "12345678",
+        "5": "ivan@mailer.com"
+
+    }
+}

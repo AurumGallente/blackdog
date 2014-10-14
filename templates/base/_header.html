@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=__page_charset__" />
+	<title>__page_header__</title>
+	<base href="<bx_url_root />" />	
+	__page_description__
+	__page_keywords__
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<bx_include_css />
+	<bx_include_js />
+    __dol_images__
+    __dol_lang__
+    __dol_options__
+    <script type="text/javascript" language="javascript">
+		var site_url = '<bx_url_root />';
+        var aUserInfoTimers = new Array();
+		$(document).ready( function() {
+			$( 'div.RSSAggrCont' ).dolRSSFeed();
+		} );
+            $(document).ready(function() {
+                $('#extra_top_menu').parents('body').addClass('memberin');
+            });
+	</script>
+        <!--social login-->        
+        <script type="text/javascript">
+            (function() {
+                
+                if (typeof window.janrain !== 'object')
+                    window.janrain = {};
+                if (typeof window.janrain.settings !== 'object')
+                    window.janrain.settings = {};
+
+                janrain.settings.tokenUrl = '';
+               
+                function isReady() {
+                    janrain.ready = true;
+                }
+                ;
+                if (document.addEventListener) {
+                    document.addEventListener("DOMContentLoaded", isReady, false);
+                } else {
+                    window.attachEvent('onload', isReady);
+                }
+
+                var e = document.createElement('script');
+                e.type = 'text/javascript';
+                e.id = 'janrainAuthWidget';
+
+                if (document.location.protocol === 'https:') {
+                    e.src = 'https://rpxnow.com/js/lib/pyctex/engage.js';
+                } else {
+                    e.src = 'http://widget-cdn.rpxnow.com/js/lib/pyctex/engage.js';
+                }
+
+                var s = document.getElementsByTagName('script')[0];                
+                s.parentNode.insertBefore(e, s);
+            })();
+        </script>
+        <!--social login-->    
+    __extra_js__
+	<bx_injection:injection_head />
+    <script type="text/javascript">
+        var oBxUserStatus = new BxUserStatus();
+        oBxUserStatus.userStatusInit('<bx_url_root />', __is_profile_page__);
+    </script>
+</head>
+__flush_header__
+<body <bx_injection:injection_body /> class="bx-def-font">
+    <bx_injection:injection_header />
+    <div id="notification_window" class="notifi_window"></div>
+	<div id="FloatDesc" style="position:absolute;display:none;z-index:100;"></div>

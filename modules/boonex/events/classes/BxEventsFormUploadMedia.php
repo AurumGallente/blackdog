@@ -1,0 +1,30 @@
+<?php
+/**
+ *  
+ *  
+ */
+
+bx_events_import ('FormEdit');
+
+class BxEventsFormUploadMedia extends BxEventsFormEdit
+{
+    function BxEventsFormUploadMedia ($oMain, $iProfileId, $iEntryId, &$aDataEntry, $sMedia, $aMediaFields)
+    {
+        parent::BxEventsFormEdit ($oMain, $iProfileId, $iEntryId, $aDataEntry);
+
+        foreach ($this->_aMedia as $k => $a) {
+            if ($k == $sMedia)
+                continue;
+            unset($this->_aMedia[$k]);
+        }
+
+        array_push($aMediaFields, 'Submit', 'id');
+
+        foreach ($this->aInputs as $k => $a) {
+            if (in_array($k, $aMediaFields))
+                continue;
+            unset($this->aInputs[$k]);
+        }
+    }
+
+}

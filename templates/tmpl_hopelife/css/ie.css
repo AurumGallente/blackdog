@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu-button, .flexnav
+{
+	display:none !important;
+}
+.sys_main_menu select
+{
+	width:100%;
+	font:15px calibri;
+	margin:10px 0 10px;
+	padding:5px;
+	height:30px;
+}

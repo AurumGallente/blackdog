@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .navbar-fixed-top,
+  .navbar-fixed-bottom,
+  .navbar-static-top {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .container-fluid {
+    padding: 0;
+  }
+  .dl-horizontal dt {
+    float: none;
+    width: auto;
+    clear: none;
+    text-align: left;
+  }
+  .dl-horizontal dd {
+    margin-left: 0;
+  }
+  .container {
+    width: auto;
+  }
+  .row-fluid {
+    width: 100%;
+  }
+  .row,
+  .thumbnails {
+    margin-left: 0;
+  }
+  .thumbnails > li {
+    float: none;
+    margin-left: 0;
+  }
+  [class*="span"],
+  .uneditable-input[class*="span"],
+  .row-fluid [class*="span"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .span12,
+  .row-fluid .span12 {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .row-fluid [class*="offset"]:first-child {
+    margin-left: 0;
+  }
+  .input-large,
+  .input-xlarge,
+  .input-xxlarge,
+  input[class*="span"],
+  select[class*="span"],
+  textarea[class*="span"],
+  .uneditable-input {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .input-prepend input,
+  .input-append input,
+  .input-prepend input[class*="span"],
+  .input-append input[class*="span"] {
+    display: inline-block;
+    width: auto;
+  }
+  .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0;
+  }
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+  }
+  .modal.fade {
+    top: -100px;
+  }
+  .modal.fade.in {
+    top: 20px;
+  }
+  div.sys_main_logo
+  {
+	  padding:15px 0 !important;
+  }
+  #sys_search_wrapper, div.sys-service-menu-wrp
+  {
+	  float:none !important;
+  }
+  #sys_search_wrapper
+  {
+	  margin:20px 0 15px !important;
+  }
+  div#sys_search
+  {
+	  margin:0 !important;
+  }
+  div#sys_search input.input_main, div#sys_search input
+  {
+	  width:90%;
+  }
+  div.logo, div.powered_section, div.logo-section, .bottomCpr, .bottomLinks
+  {
+	  text-align:center !important;
+  }
+  div.sys-service-menu-wrp
+  {
+	 display: block;
+    float: none !important;
+    margin: 0 auto !important;
+    max-width: 238px;
+    min-width: 145px;
+  }
+  .flexnav li a.top_link
+  {
+	  background: url(../images/menubg.png) repeat-x scroll top center !important;
+  }
+  .flexnav
+  {
+	  background:none !important;
+  }
+  .input_wrapper
+  {
+	  float:none;
+  }
+  div.shoutbox_wrapper
+  {
+	  width:99% !important;
+  }
+  div.subMenuCnt
+  {
+	  position:relative;
+  }
+  div.sys_page_submenu-main
+  {
+	  clear:both;
+	  margin:10px 0 0;
+  }
+  div.sys_page_actions
+  {
+	  position:absolute;
+	  right:15px;
+	  top:15px;
+  }
+  div.top_settings_block div.per_page_block, div.cmt-pages, div.top_settings_block div.per_page_block {
+    clear: both !important;
+    float: left !important;
+    margin: 10px 0 0 !important;
+}
+.mceToolbar
+{
+	display:none;
+}
+
+
+	div.sys_main_logo {
+    background: url("../images/headerbg.png") repeat scroll 0 0 transparent;
+    border-bottom: 0 none;
+    height: auto;
+    min-height: 30px;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+}
+.sys_main_menu
+{
+	position:static !important;
+}
+#sys_search_wrapper
+{
+	position:static !important;
+	background:none !important;
+	padding:0 !important;
+	display:block !important;
+}
+div.topsearch
+{
+	float:none !important;
+}
+div.topsearch a
+{
+	display:none !important;
+}
+
+.redbutton {
+    float: none;
+    padding: 0 0 0 5px;
+	display:block;
+	margin:10px auto 0;
+}
+.sys-service-menu.bx-def-margin-sec-left.bx-def-font-large {
+    display: block;
+    text-align: center;
+}
+
+.thumbnail_block.thumbnail_block_icon
+{
+	display:inline-block; 
+	float:none !important;
+}
+
+.bannerblock > img {
+    height:293px;
+	
+}
+.form_advanced_table .sys-icon.info {
+    color: #006699;
+    cursor: help;
+    padding: 10px 0 0;
+}
+div.sys-service-menu-wrp {
+    clear: right;
+   	padding: 0;
+}
+.flexnav li ul li a{}
+.flexnav li a.top_link
+{
+
+	background: url(../images/menuhorz.png) repeat-x scroll center bottom #C64100 !important;
+	height:62px;
+	line-height:59px;
+}
+div.shoutbox_wrapper{min-width:182px !important;}
+
+
+div.sys_page_actions {
+    position: relative;
+    right: 15px;
+    top: 3px;
+}
+.form_advanced_table tr td.caption {
+    line-height: normal;
+    padding: 0 0 10px 15px !important;
+    vertical-align: middle;
+}
+.form_advanced_table td.caption {
+    color: #222222;
+    padding: 0 0 0 10px;
+    text-align: left;
+}
+.form_advanced_table td.caption {
+    text-transform: capitalize;
+    width: 35%;
+}
+
+.form_advanced_table tr td.value {
+    padding: 0 0 10px !important;
+}
+.form_advanced_table td.value {
+    padding-left: 2px;
+    padding-right: 9px;
+}
+div.sys-service-menu-wrp {
+    display: block;
+    float: none !important;
+    margin: 0 auto !important;
+   max-width: 151px;
+    min-width: 145px;
+	margin:0 auto !important;
+	height:36px !important;
+}
+.memberin div.sys-service-menu-wrp
+{
+	 max-width: 285px !important;
+}
+.bx-btn1, input.gsc-search-button, .cur_pnt {
+    background: none repeat scroll 0 0 #81B721;
+    border: 1px solid #81B721;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 20px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out 0s;
+}
+div.sys-service-menu a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: 15px/37px calibri;
+    height: 36px;
+    padding: 0 20px;
+	line-height:36px;
+    text-transform: uppercase;
+}
+  	div.col2page, div.col3page
+	{
+		width:100% !important;
+		margin: 0 !important;
+	}

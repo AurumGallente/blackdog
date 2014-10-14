@@ -1,0 +1,5 @@
+{
+    "method":"dolphin.getGroupsFeed2",
+    "user":{"name":"admin","hash":"31fcdfca61270b19bfe5eeabc6465050983fbe24"},
+    "data":{}
+}

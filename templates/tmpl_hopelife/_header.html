@@ -1,0 +1,94 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=__page_charset__" />
+	<title>__page_header__</title>
+	<base href="<bx_url_root />" />	
+	__page_description__
+	__page_keywords__
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<bx_include_css />
+	<bx_include_js />
+    __dol_images__
+    __dol_lang__
+    __dol_options__
+    <script type="text/javascript" language="javascript">
+		var site_url = '<bx_url_root />';
+        var aUserInfoTimers = new Array();
+		$(document).ready( function() {
+			$( 'div.RSSAggrCont' ).dolRSSFeed();
+		} );
+	</script>
+    __extra_js__
+	<bx_injection:injection_head />
+    <script type="text/javascript">
+        var oBxUserStatus = new BxUserStatus();
+        oBxUserStatus.userStatusInit('<bx_url_root />', __is_profile_page__);
+    </script>
+     <link href="templates/tmpl_hopelife/css/bootstrap.css" rel="stylesheet"/>
+     <link href="templates/tmpl_hopelife/css/bootstrap-responsive.css" rel="stylesheet"/>
+       <link href="templates/tmpl_hopelife/css/flexnav.css" rel="stylesheet"/>
+     <link href="templates/tmpl_hopelife/css/custom.css" rel="stylesheet"/>
+      <script src="templates/tmpl_hopelife/js/bootstrap.js" type="text/javascript"> </script>
+      <script src="templates/tmpl_hopelife/js/jquery.flexnav.js" type="text/javascript"> </script>
+       <script src="templates/tmpl_hopelife/js/tinynav.js" type="text/javascript"> </script>
+      <script src="templates/tmpl_hopelife/js/custom.js" type="text/javascript"> </script>
+<!--[if IE 9]>
+     <style type="text/css"> * { filter: none !important;} </style>
+     <![endif]-->
+     
+       <!--[if lte IE 8]>
+     <script src="templates/tmpl_hopelife/js/customie.js" type="text/javascript"> </script>
+     <link href="templates/tmpl_hopelife/css/ie.css" rel="stylesheet"/>
+
+     <link id="bootie" href="templates/tmpl_hopelife/css/min1200.css" rel="stylesheet"/>
+
+     <link id="bootiemax" href="" rel="stylesheet"/>
+     <script type="text/javascript">
+     $(document).ready(function() {
+	
+function adjustStyle2(width) {
+    width = parseInt(width);
+    if (width >= 1200) {
+        $("#bootie").attr("href", "templates/tmpl_hopelife/css/min1200.css");
+		$("#bootiemax").removeAttr("href");
+		
+    } else if ((width >= 980) && (width <= 1199)) {
+        $("#bootie").attr("href", "templates/tmpl_hopelife/css/min980max1199.css");
+		$("#bootiemax").removeAttr("href");
+    } else if ((width >= 768) && (width <= 979)) {
+        $("#bootie").attr("href", "templates/tmpl_hopelife/css/min768px-max979px.css");
+		$("#bootiemax").attr("href", "templates/tmpl_hopelife/css/max979.css");
+	} else if(width <= 767)
+	{
+		$("#bootie").attr("href", "templates/tmpl_hopelife/css/max767.css");
+		if(width <= 480)
+		{
+			$("#bootiemax").attr("href", "templates/tmpl_hopelife/css/max480.css");
+		}
+	}
+}
+
+$(function() {
+    adjustStyle2($(window).width());
+    $(window).resize(function() {
+        adjustStyle2($(window).width());
+    });
+});
+});
+
+     
+     </script>
+
+ <![endif]-->
+     
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->     
+</head>
+__flush_header__
+<body <bx_injection:injection_body /> class="bx-def-font">
+    <bx_injection:injection_header />
+    <div id="notification_window" class="notifi_window"></div>
+	<div id="FloatDesc" style="position:absolute;display:none;z-index:100;"></div>

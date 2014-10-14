@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+	div.shoutbox_wrapper
+{
+	width:100% !important;
+}
+	div.shoutbox_wrapper
+{
+	min-width:255px !important;
+}
+
+
+
+.flexnav li a.top_link
+{
+	border:0 none;
+	background:none;
+	height:62px;
+	line-height:59px;
+}div.sys_main_logo {
+    background: url("../images/headerbg.png") repeat scroll 0 0 transparent;
+    border-bottom: 0 none;
+    height: auto;
+    min-height: 30px;
+    padding: 0px 0;
+    position: absolute;
+    width: 100%;
+}
+div.sys-service-menu-wrp{height:auto;margin:0; position: static; padding:0}
+.headerleft
+{
+
+}
+div.logo
+{
+	text-align:left;
+	margin:6px 0 0;
+}
+
+.sys_main_menu
+{
+	position:static !important;
+}
